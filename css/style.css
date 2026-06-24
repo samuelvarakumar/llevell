@@ -1192,16 +1192,6 @@ frame
   font-weight: 500;
   line-height: 100%;
 }
-.mil-logo{
-  display:inline-flex !important;
-  align-items:center !important;
-  text-decoration:none;
-}
-.mil-logo-img{
-  height:40px;   /* adjust */
-  width:auto;
-  display:block;
-}
 @media screen and (max-width: 992px) {
   .mil-logo {
     font-size: 36px;
@@ -1210,8 +1200,8 @@ frame
 
 .mil-frame {
   padding: 50px 60px 60px 60px;
-  position: fixed !important;
-  z-index: 3;
+  position: fixed;
+  z-index: 2;
   pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2534,7 +2524,6 @@ team
   background-color: rgb(255, 152, 0);
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
-  display: none;
 }
 .mil-team-card img {
   position: absolute;
@@ -2584,7 +2573,6 @@ team
   pointer-events: none;
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
-  
 }
 .mil-team-card .mil-description .mil-secrc-text {
   opacity: 0;
@@ -4239,41 +4227,4 @@ html.is-animating .mil-menu-frame {
   opacity: 0;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
-}
-
-.mil-logo::before,
-.mil-logo::after{
-  content: none !important;
-}
-
-.mil-logo{
-  display:inline-flex !important;
-  align-items:center !important;
-  text-decoration:none;
-}
-
-.mil-logo-img{
-  height:40px;
-  width:auto;
-  display:block;
-}
-
-/* Remove any template-injected text like "A." */
-.mil-logo::before,
-.mil-logo::after{
-  content: none !important;
-}
-
-/* Make sure the GIF shows */
-.mil-logo{
-  display: inline-flex !important;
-  align-items: center !important;
-  text-decoration: none !important;
-  line-height: 0 !important;
-}
-
-.mil-logo-img{
-  height: 40px;       /* change size here */
-  width: auto;
-  display: block !important;
 }
